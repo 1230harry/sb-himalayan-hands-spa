@@ -6,10 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "docker:build": "docker build -t sb-himalayan-hands-spa .",
+    "docker:run": "docker run -p 3000:3000 sb-himalayan-hands-spa",
+    "lint": "eslint",
+    "seed:sanity": "node ./scripts/seedSanityClean.js"
   },
   "dependencies": {
+    "@portabletext/react": "^6.0.2",
+    "@sanity/client": "^7.14.1",
+    "@sanity/image-url": "^2.0.3",
+    "grove": "^0.4.0",
     "next": "16.1.6",
+    "next-sanity": "^12.0.16",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },

@@ -1,0 +1,14 @@
+node_modules
+.next
+.vercel
+dist
+.env.local
+studio/node_modules
+studio/.sanity
+studio/.env
+pnpm-debug.log
+npm-debug.log
+coverage
+logs
+*.log
+/.git
